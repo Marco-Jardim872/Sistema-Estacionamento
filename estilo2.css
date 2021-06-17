@@ -1,0 +1,432 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+} 
+header{
+    width: 100%;
+    background-color: rgb(70, 70, 71);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    border-style: solid;
+    border-width: 10px 10px 0px 10px  rgb(255, 255, 255);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(152, 153, 153);
+    color: white;
+    height: 100vh;
+   
+}
+#titulo{
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+    margin: auto;
+}
+.conteiner{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    height:100%
+  
+}
+#dados{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+ 
+}
+#precos{
+    
+    width: 25%;
+    background-color: black;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 0px 0px 0px 10px  rgb(255, 255, 255);
+}
+h2{
+    margin-bottom: 40px;
+}
+#tabprecos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#tabprecos h4{
+    font-size: 1em;
+}
+.valores{
+    width: 100%;
+    font-size: 1em;
+    height: max-content;
+    background-color: white;
+    color: black;
+}
+img{
+    display: flex;
+    width:200px;
+}
+
+h4{
+    margin-top: 10px;
+}
+h1{
+    font-size: 2.5em;
+}
+
+#cadastro{
+    background-color: rgb(142, 142, 143);
+    padding: 20px 0;
+    height: 100%;
+    justify-content: center;
+    border-style: solid;
+    border-width: 0px 10px 0px 10px  rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#patio{
+    overflow: auto;
+    background-color:  #bf930d;
+    padding: 20px 0;
+    height: 50%;
+    border-style: solid;
+    border-width: 0px 0px 0px 10px  rgb(255, 255, 255);
+}
+.veiculos{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    padding: 2px;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1.5em;
+   
+}
+.veiculos label,input{
+    margin-bottom: 2px;
+}
+button{
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    width: 40%;
+    padding: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+}
+.veiculos input{
+    font-size: 0.8em;
+    width: 500px;
+}
+.btnRem{
+    
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    width: 75px;
+    height: 50px;
+    padding: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+    font-size: 0.8em;
+    background-color: rgb(131, 15, 15);
+    color: white;
+}
+#entrada{
+    background-color: rgb(15, 105, 15);
+    color: white;
+}
+#saida{
+    background-color: rgb(131, 15, 15);
+    color: white;
+}
+table{
+  
+  width: 100%;
+  margin-top: 20px;
+}
+th, td {
+    margin: auto;
+    justify-content: space-between;
+  }
+  .footer-social {
+    display:flex;
+  }
+.footer-social a {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width:35px;
+    height: 35px;
+    background-color:rgb(20, 36, 184);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    margin-right:10px;
+}
+.footer-social a:hover {
+    background-color:#5667b2;
+}
+.footer-social img {
+    height:15px;
+    width: max-content;
+}
+@media (min-width:750px) and (max-width:900px) {
+/*cadastro veiculos*/
+#cadastro{
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    font-size: 0.8em;
+}
+#botoes{
+    width:50%
+}
+.veiculos input{
+    font-size: 0.8em;
+    width: 250px;
+}
+#cadastro h1{
+    font-size: 1.5em;
+    width: 100%;
+}
+label{
+        font-size: 0.8em;
+    }
+.veiculos{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    width: 50%;
+}
+
+/*header*/
+header{
+    font-size: 0.8em;
+   
+}
+img{
+    width:150px;
+}
+/*patio*/
+
+  th, td {
+   
+    font-size: 0.8em;
+    margin: auto;
+    justify-content: space-between;
+    }
+/*preços*/
+#precos, #tabprecos{
+font-size: 1.1em;
+
+
+}
+.footer-social a {
+width:95%;
+height: 25px;
+}
+.footer-social img {
+    height:15px;
+}
+}
+
+@media (min-width:580px) and (max-width:750px) {
+    /*cadastro veiculos*/
+    #cadastro{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    button{
+        font-size: 0.7em;
+    }
+    #botoes{
+        width:50%
+    }
+    .veiculos input{
+        font-size: 0.8em;
+        width: 210px;
+    }
+    #cadastro h1{
+        font-size: 1.5em;
+        width: 100%;
+    }
+    label{
+            font-size: 0.8em;
+        }
+    .veiculos{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        width: 50%;
+    }
+    
+    /*header*/
+    header{
+        font-size: 0.8em;
+       
+    }
+    img{
+        width:150px;
+    }
+    /*patio*/
+    
+      th, td {
+       
+        font-size: 0.8em;
+        margin: auto;
+        justify-content: space-between;
+        }
+    /*preços*/
+   
+    #tabprecos h4{
+        margin: 0px;
+        padding: 0px;
+        font-size: 0.5em;
+    }
+    #tabprecos input{
+        width: 100px;
+    }
+    #precos h2{
+        font-size: 0.6em;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0px;
+       
+    }
+    .footer-social a {
+    width:95%;
+    height: 25px;
+    }
+    .footer-social img {
+        height:15px;
+    }
+    }
+
+
+@media (max-width:580px) {
+/*cadastro veiculos*/
+#cadastro{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+button{
+    font-size: 0.6em;
+}
+#botoes{
+   margin: auto;
+   height: 20%;
+   justify-content: space-between;
+   display: inline-flex;
+}
+.veiculos input{
+   font-size: 0.5em;
+   margin: 0;
+   width: 120px;
+   align-items: right;
+   margin-right: 0px;
+   justify-items: right;
+   justify-content: right;
+}
+#cadastro h1{
+   font-size: 1.2em;
+   width: 100%;
+}
+label{
+   font-size: 0.5em;
+    }
+.veiculos{
+   height: 65%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+}
+
+/*header*/
+header{
+    font-size: 0.4em;
+    width: 100%;
+}
+img{
+    width:20%;
+}
+/*patio*/
+#patio{
+  height: 100%;
+}
+#patio h1{
+    font-size: 1.5em;
+}
+  th, td {
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-between;
+    }
+/*preços*/
+
+#tabprecos{
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    font-size: 0.4em;
+  
+}
+#tabprecos h4{
+    margin: 0px;
+    padding: 0px;
+}
+#tabprecos input{
+    width: 60px;
+}
+#precos h2{
+    font-size: 0.6em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+   
+}
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+}
+.footer-social  a{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width:25px;
+    height: 25px;
+
+}
+.footer-social img {
+    height:10px;
+}
+
+}

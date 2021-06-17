@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo2.css">
+    <title>Sistema de Estacionamento</title>
+</head>
+    
+<body onload="mostraPatio()">
+    <header>
+        <div id="titulo">
+            <h1>ESTACIONAMENTO MJ</h1>
+            <img src="./imagens/car.png">
+        </div>
+    </header>
+    <div class="conteiner">
+        <div id="precos">
+            <div class="footer-social">
+                <a href=""><img src="./imagens/twitter.png" /></a>
+                <a href=""><img src="./imagens/linkedin.png" /></a>
+                <a href=""><img src="./imagens/facebook.png" /></a>
+                <a href=""><img src="./imagens/googleplus.png" /></a>
+                <a href=""><img src="./imagens/pinterest.png" /></a>
+            </div>
+            <h2>PREÇOS</h2>
+            <div id="tabprecos">
+                <h4>Até 30min:   R$  </h4>
+                <div class="valores" id="pC1">10</div>
+                <h4>Até 1hora:   R$ </h4>
+                <div class="valores" id="pC2">15</div>
+                <h4>Até 1h 30min: R$ </h4>
+                <div class="valores" id="pC3">22</div>
+                <h4> 30 min adic: R$ </h4>
+                <div class="valores" id="pC4">7</div>
+                <h4>MENSAL:   R$ </h4>
+                <div class="valores">250</div>
+            </div>
+        </div>
+        <div id="dados">
+            <div id="cadastro">
+                <h1>CADASTRO DE VEÍCULOS</h1>
+                <form class="veiculos" id="carros">
+                   
+                        <label for="modeloVeiculo">MODELO VEÍCULO:</label>
+                        <input type="text" id="mV" name="modeloVeiculo"  autofocus>
+                        <label for="placaVeiculo">PLACA VEÍCULO:</label>
+                        <input type="text" id="pV" name="placaVeiculo" >
+                        <label for="corVeiculo">COR VEÍCULO:</label>
+                        <input type="text" id="cV" name="corVeiculo" >
+                       
+                   
+                </form>
+                
+                <div id="botoes">
+                    <button id="entrada" onclick="cadastrarVeiculo()" type="button" >ENTRADA DE VEÍCULOS</button>
+                    <button id="saida" onclick="sair()" type="button" >SAÍDA DE VEÍCULOS</button>
+                </div>
+            </div>
+            <div id="patio">
+                <h1>PÁTIO</h1>
+                <table id="tbPatio">
+                    <thead>
+                        <tr>
+                            <th>MODELO</th>
+                            <th>PLACA</th>
+                            <th>COR</th>
+                            <th>ENTRADA</th>
+                            <th>SAÍDA</th>
+                            <th>TOTAL A PAGAR</th>
+                            <th>IMPRIMIR</th>
+                            <th>REMOVER</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultados">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
